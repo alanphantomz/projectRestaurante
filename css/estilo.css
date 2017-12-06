@@ -1,0 +1,311 @@
+/*
+ctrl+f9 para ordenar alfabeticamente 
+las propiedades(previamente pintarlas o seleccionarlas)
+*/
+body{
+	font-family: 'Gochi Hand', cursive;
+	font-size: 16px;
+}
+
+footer{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 0.8em;
+	background-color: green;
+	margin-top: 2px;
+	color: #f7f7f7;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#332b00+0,8e5c11+50,c6b387+100 */
+	background: #332b00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #332b00 0%, #8e5c11 50%, #c6b387 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #332b00 0%,#8e5c11 50%,#c6b387 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #332b00 0%,#8e5c11 50%,#c6b387 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332b00', endColorstr='#c6b387',GradientType=0 ); /* IE6-9 */
+
+}
+
+header {
+	background-color: #604214;
+	text-align: right;
+}
+
+header figure{
+	float: left;
+	margin-left: 100px;
+}
+
+header figure img{
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+}
+
+header h1{
+	color: #f7f7f7;
+	display: block;
+	float: left;
+	font-size: 1.6em;
+	margin: 7px 80px 0px 50px;
+	padding: 0px;
+}
+
+header nav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+header nav ul li{
+	display: inline-block;
+	height: 35px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+header nav ul li a{
+	color: #f7f7f7;
+	font-weight: bold;
+	padding: 15px 25px; /*puedo hacer click en este espacio*/
+	text-decoration: none; /*sin subrayado*/
+}
+
+section{
+	background: url("../img/fondo.jpeg");
+}
+
+section article.receta{
+	border-radius: 0px 0px 15px 15px;
+	border-style: solid;
+	border-width: 2px;
+	display: inline-block;
+	font-size: 1.2em;
+	margin: 50px 0px 20px 10%;
+	position: relative;
+	vertical-align: top; /*alineacion arriba*/
+	width: 85%;
+	box-shadow: 0px 0px 10px #f7f7f7;/*sombras con difuninado*/
+}
+
+section article.receta figure{
+	float: left;
+	margin-left: -30px;
+	margin-top: -50px;
+}
+
+section article.receta figure img{
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 5px;
+	height: 140px;
+	width: 180px;
+}
+
+section article.receta div{
+	width: 90%;
+	margin: 30px 4% 10px 5%;
+	border-width: 2px;
+	border-style: solid;
+	position: relative;
+	padding-top: 20px;
+	font-size: 0.9em;
+	border-radius: 15px;
+}
+
+section article.receta div span{
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	line-height: 20px;
+	border-radius: 15px;
+	text-decoration: underline;
+	padding: 3px 10px;
+	background-color: white;
+}
+
+section article.receta div ul{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+
+section article.receta div ul li{
+	font-weight: bolder;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 5px 3%;
+	width: 26%;
+
+}
+
+section article.receta h2{
+	padding: 0px;
+	text-align: right;
+	margin: 15px 20px 0px 165px;
+	font-size: 1.2em;
+}
+
+section article.receta p{
+	font-size: 0.8em;
+	text-align: justify;
+	margin: 15px 10px 5px 30px;
+}
+
+section article.receta span.tipo{
+	color: #f7f7f7;
+	border-radius: 15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 2px;
+	font-weight: bolder;	
+	height: 30px;
+	line-height: 30px; /*el texto se centra*/
+	padding: 2px 10px;
+	position: absolute;
+	right: -2px;
+	top: -38px;
+}
+/*section article p{
+	font-weight: bolder;/*mas negrita*/
+/*	color: red;
+	font-weight: bold;/*negrita*/
+/*	width: 200px;
+	text-align: right;
+	font-style: italic; /*cursivo*/
+/*	text-decoration: underline;/*subrayado*/
+/*	line-height: 15px; /*distancia entre lineas*/
+
+	/*tamaños relativos*/
+/*	font-size: 0.8em;/*80% del padre*/
+	/*font-size: 0.8rem;/*80% del root o raiz*/	
+/*}*/
+
+
+
+/*Mobile first
+  Pensado primero para pantallas pequeñas
+*/
+/**********CREACION DE TEMAS***************/
+
+/****************************************/
+/***********CORORES DEL DESAYUNO***********/
+/****************************************/
+section article.desayuno,
+section article.desayuno figure img,
+section article.desayuno div,
+section article.desayuno span.tipo{
+	border-color: #082e0b;
+}
+
+section article.desayuno h2{
+	color: #154419;
+}
+
+section article.desayuno span.tipo,
+section article.desayuno div,
+section article.desayuno div span{
+	background-color: #154419;
+}
+
+section article.desayuno p{
+	color: #3e7242;
+}
+
+section article.desayuno{
+	background-color: #c0ee90;
+}
+
+section article.desayuno div span,
+section article.desayuno div ul li{
+	color: #9cd95c;
+}
+
+
+/****************************************/
+/***********CORORES DEL POSTRE***********/
+/****************************************/
+section article.postre,
+section article.postre figure img,
+section article.postre div,
+section article.postre span.tipo{
+	border-color: #1b0c02;
+}
+
+section article.postre h2{
+	color: #5a3107;
+}
+
+section article.postre span.tipo,
+section article.postre div,
+section article.postre div span{
+	background-color: #5a3107;
+}
+
+section article.postre p{
+	color: #97521e;
+}
+
+section article.postre{
+	background-color: #b29178;
+}
+
+section article.postre div span,
+section article.postre div ul li{
+	color: #f5cba2;
+}
+
+/****************************************/
+/***********CORORES DEL PESCADO***********/
+/****************************************/
+section article.pescado,
+section article.pescado figure img,
+section article.dpescado div,
+section article.pescado span.tipo{
+	border-color: #020f2b;
+}
+
+section article.pescado h2{
+	color: #08215b;
+}
+
+section article.pescado span.tipo,
+section article.pescado div,
+section article.pescado div span{
+	background-color: #08215b;
+}
+
+section article.pescado p{
+	color: #335093;
+}
+
+section article.pescado{
+	background-color: #ade0f0;
+}
+
+section article.pescado div span,
+section article.pescado div ul li{
+	color: #9db7f5;
+}
+
+@media screen and (min-width: 480px){
+	header nav ul li{
+		width: 22%;
+	}
+}
+
+@media screen and (min-width: 767px){
+	header nav ul li{
+		width: 8%;
+	}
+
+	section article.receta{
+		width: 40%;
+		margin: 50px 3% 20px 6%;
+	}
+}
+
+@media screen and (min-width: 950px){
+	section article.receta{
+		width: 26%;
+		margin: 50px 1% 20px 5%;
+	}
+}
